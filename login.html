@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Kora Admin, Sign in</title>
+<title>Kivo Admin, Sign in</title>
 <link rel="icon" href="assets/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -18,7 +18,7 @@
 
 <main class="signin split">
   <aside class="signin-art" aria-hidden="true">
-    <div class="signin-mark"><b>kora<em>.</em></b></div>
+    <div class="signin-mark"><b>kivo<em>.</em></b></div>
     <svg class="signin-chart" viewBox="0 0 400 220" preserveAspectRatio="none">
       <defs><linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".22"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
       <path d="M0 170 L40 150 L80 160 L120 120 L160 132 L200 96 L240 108 L280 70 L320 84 L360 46 L400 56 L400 220 L0 220 Z" fill="url(#sg)"/>
@@ -28,13 +28,13 @@
 
   <div class="signin-pane">
   <div class="signin-card">
-    <div class="signin-mobile-mark"><b>kora<em>.</em></b></div>
+    <div class="signin-mobile-mark"><b>kivo<em>.</em></b></div>
 
     <form id="signinForm" novalidate>
       <div class="field-block">
         <label for="email">Work email</label>
         <div class="field"><input id="email" type="email" autocomplete="username"
-          placeholder="you@korabinary.com" autofocus></div>
+          placeholder="you@kivobinary.com" autofocus></div>
         <div class="field-error" id="emailError" hidden></div>
       </div>
 
@@ -106,7 +106,7 @@
     note.hidden = true;
   } else {
     note.innerHTML = '<b>No API configured.</b> Set <span class="num">apiBase</span> ' +
-      'in assets/js/config.js to the address of the Kora API before signing in.';
+      'in assets/js/config.js to the address of the Kivo API before signing in.';
   }
 
   form.addEventListener('submit', async function (e) {

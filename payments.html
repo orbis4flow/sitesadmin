@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Kora Admin, Deposits</title>
+<title>Kivo Admin, Deposits</title>
 <link rel="icon" href="assets/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -25,7 +25,7 @@
   /* The sites that share this backend. Read from the Domains page, so a
      new site shows up here as soon as it is added there. The console's
      own host is not a site anyone pays through. */
-  var SITES = [['all', 'Every site'], ['korabinary.com', 'Kora'], ['lyrabinary.com', 'Lyra'], ['vexabinary.com', 'Vexa']];
+  var SITES = [['all', 'Every site'], ['kivobinary.com', 'Kivo'], ['zenytrade.com', 'Zeny'], ['verabinary.com', 'Vera']];
   var siteTag = A.siteTag;
   Promise.resolve(A.data.domains ? A.data.domains() : []).then(function (list) {
     var hosts = (list || []).map(function (d) { return d.host; })

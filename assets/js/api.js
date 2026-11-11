@@ -134,8 +134,8 @@
       /* Only a chain transfer carries these, and they are the only
          evidence there is for one. */
       txHash: p.txHash || null, network: p.network || null,
-      /* The site it was paid through: korabinary.com, lyrabinary.com or vexabinary.com. */
-      site: p.site || 'korabinary.com',
+      /* The site it was paid through: kivobinary.com, zenytrade.com or verabinary.com. */
+      site: p.site || 'kivobinary.com',
       created: ms(p.created), settled: ms(p.settled)
     };
   }

@@ -1,5 +1,5 @@
 /* ============================================================
-   Kora Admin, shell and pages
+   Kivo Admin, shell and pages
    The rail and top bar are injected here so every page carries the
    same chrome and a new page is one HTML file with a mount point.
    ============================================================ */
@@ -116,13 +116,13 @@
   /* ---------- which site ----------
      Several front ends share this backend. Each gets a short name and a
      colour of its own, so a row says at a glance where it came from.
-     Kora is the primary; any site not named here (a new
+     Kivo is the primary; any site not named here (a new
      domain added on the Domains page) is shown by its first label in
      the third colour until it is given one. */
   var SITE_LOOK = {
-    'korabinary.com': { name: 'Kora', cls: 'kora', color: '#00994F' },
-    'lyrabinary.com': { name: 'Lyra', cls: 'lyra', color: '#2563EB' },
-    'vexabinary.com': { name: 'Vexa', cls: 'vexa', color: '#B8860B' }
+    'kivobinary.com': { name: 'Kivo', cls: 'kivo', color: '#00994F' },
+    'zenytrade.com': { name: 'Zeny', cls: 'zeny', color: '#2563EB' },
+    'verabinary.com': { name: 'Vera', cls: 'vera', color: '#B8860B' }
   };
   function siteColor(host) {
     return (SITE_LOOK[host] || { color: '#93928C' }).color;
@@ -458,7 +458,7 @@
     var title = document.body.getAttribute('data-title') || '';
 
     var rail = '<aside class="rail" id="rail">' +
-      '<a class="rail-brand" href="index.html"><b>kora<em>.</em></b><span>Admin</span></a>' +
+      '<a class="rail-brand" href="index.html"><b>kivo<em>.</em></b><span>Admin</span></a>' +
       '<nav class="rail-nav">' +
         /* Drop a heading whose links were all filtered out. A lone
            "Team" label with nothing under it looks like a page that

@@ -702,10 +702,10 @@ td.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
   display:inline-block;font-size:10.5px;font-weight:600;letter-spacing:.07em;
   text-transform:uppercase;color:var(--muted);
 }
-.site-tag.kora,.site-tag.lyra,.site-tag.vexa,.site-tag.other{border:1px solid currentColor;padding:1px 6px;border-radius:0}
-.site-tag.kora{color:#00994F}
-.site-tag.lyra{color:#2563EB}
-.site-tag.vexa{color:#B8860B}
+.site-tag.kivo,.site-tag.zeny,.site-tag.vera,.site-tag.other{border:1px solid currentColor;padding:1px 6px;border-radius:0}
+.site-tag.kivo{color:#00994F}
+.site-tag.zeny{color:#2563EB}
+.site-tag.vera{color:#B8860B}
 .site-tag.other{color:#93928C}
 
 .site-tag.zovian{color:#0F9D58}

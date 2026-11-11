@@ -1,8 +1,8 @@
 /* ============================================================
    Console configuration
 
-   The console reads everything from the Kora API (the backend shared by
-   KoraBinary, LyraBinary and VexaBinary). Point this at the service and
+   The console reads everything from the Kivo API (the backend shared by
+   KivoBinary, ZenyTrade and VeraBinary). Point this at the service and
    sign in; without it nothing can be read and no one can sign in.
 
    The console's own origin must be listed in the API's CORS_ORIGINS,
