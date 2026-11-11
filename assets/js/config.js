@@ -9,8 +9,7 @@
    or the browser refuses every call before it leaves.
    ============================================================ */
 window.NexasAdminConfig = {
-  /* TODO: the Kora API on Render, e.g. https://kora-api.onrender.com */
-  apiBase: '',
+  apiBase: 'https://sitesbackend.onrender.com',
 
   /* TODO: the new Supabase project (Settings, API). The publishable key
      is safe in a browser; the service-role key must never appear here. */
