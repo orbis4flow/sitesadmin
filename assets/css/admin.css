@@ -704,8 +704,8 @@ td.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
 }
 .site-tag.kivo,.site-tag.zeny,.site-tag.vera,.site-tag.other{border:1px solid currentColor;padding:1px 6px;border-radius:0}
 .site-tag.kivo{color:#00994F}
-.site-tag.zeny{color:#2563EB}
-.site-tag.vera{color:#B8860B}
+.site-tag.zeny{color:#B8860B}
+.site-tag.vera{color:#2563EB}
 .site-tag.other{color:#93928C}
 
 .site-tag.zovian{color:#0F9D58}

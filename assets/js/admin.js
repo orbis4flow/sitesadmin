@@ -121,8 +121,8 @@
      the third colour until it is given one. */
   var SITE_LOOK = {
     'kivobinary.com': { name: 'Kivo', cls: 'kivo', color: '#00994F' },
-    'zenytrade.com': { name: 'Zeny', cls: 'zeny', color: '#2563EB' },
-    'verabinary.com': { name: 'Vera', cls: 'vera', color: '#B8860B' }
+    'zenytrade.com': { name: 'Zeny', cls: 'zeny', color: '#B8860B' },
+    'verabinary.com': { name: 'Vera', cls: 'vera', color: '#2563EB' }
   };
   function siteColor(host) {
     return (SITE_LOOK[host] || { color: '#93928C' }).color;
