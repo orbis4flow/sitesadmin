@@ -11,8 +11,8 @@
 window.NexasAdminConfig = {
   apiBase: 'https://sitesbackend.onrender.com',
 
-  /* TODO: the new Supabase project (Settings, API). The publishable key
+  /* The Supabase project. The publishable key
      is safe in a browser; the service-role key must never appear here. */
-  supabaseUrl: '',
-  supabaseKey: ''
+  supabaseUrl: 'https://fsokiaswtlmdsqrpoqxt.supabase.co',
+  supabaseKey: 'sb_publishable_xY2PH-pIxuh-WDClk7i4iw_pJkFW8nW'
 };
