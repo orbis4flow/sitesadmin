@@ -172,12 +172,6 @@
       run: function () { return fromService('payhero', 'PayHero'); }
     },
 
-    paystack: {
-      label: 'Cards (Paystack)',
-      note: 'Checks the secret key card deposits are taken with.',
-      run: function () { return fromService('paystack', 'Paystack'); }
-    },
-
     payments: {
       label: 'Deposits in flight',
       note: 'Looks for deposits pending over an hour, which is what a missed ' +

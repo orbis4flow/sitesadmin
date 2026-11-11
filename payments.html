@@ -50,7 +50,7 @@
         method: state.method,
         site: state.site,
         provider: state.method === 'mpesa' ? 'payhero' :
-                  state.method === 'card' ? 'paystack' : 'all'
+                  'all'
       });
       rows = out.payments; total = out.total;
     } catch (err) {
@@ -88,7 +88,7 @@
         }).join('') +
       '</div>' +
       '<div class="seg" id="methodSeg">' +
-        [['all', 'Every method'], ['mpesa', 'M-Pesa'], ['card', 'Card']].map(function (m) {
+        [['all', 'Every method'], ['mpesa', 'M-Pesa']].map(function (m) {
           return '<button data-method="' + m[0] + '" class="' + (state.method === m[0] ? 'on' : '') + '">' +
             m[1] + '</button>';
         }).join('') +

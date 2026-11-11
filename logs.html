@@ -87,7 +87,7 @@
     if (!health) return '';
     var s = health.services || {};
     return '<div class="status-row">' +
-      ['supabase', 'paystack', 'payhero', 'sms', 'payments']
+      ['supabase', 'payhero', 'sms', 'payments']
         .map(function (k) { return statusCell(k, s[k]); }).join('') +
     '</div>';
   }
@@ -117,8 +117,6 @@
           ? A.esc(a.corsOrigins.join(', '))
           : 'none, every browser call is refused') + '</b></div>' +
       '<div class="sect-label" style="margin-top:14px">Webhook addresses</div>' +
-      '<div class="kv"><span>Paystack</span><b class="num">' +
-        A.esc(a.webhooks.paystack) + '</b></div>' +
       '<div class="kv"><span>PayHero</span><b class="num">' +
         A.esc(a.webhooks.payhero) + '</b></div>');
   }
