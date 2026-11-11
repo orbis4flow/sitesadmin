@@ -326,8 +326,7 @@
      Flat purple bars, same shape as the one in the trading app so a
      wait looks the same wherever it happens. */
   function loader(cls) {
-    return '<span class="loader ' + (cls || '') + '" role="status" aria-label="Working">' +
-      '<i></i><i></i><i></i><i></i></span>';
+    return '<span class="loader' + (cls ? ' ' + cls : '') + '" role="status" aria-label="Working"></span>';
   }
 
   /* ---------- data ----------

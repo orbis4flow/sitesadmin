@@ -717,3 +717,22 @@ td.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
 /* Logo: the obisflow wordmark manner, type not an image. */
 .rail-brand b{font-family:"Poppins",var(--sans);font-weight:700;letter-spacing:-.02em;text-transform:none;font-size:19px}
 .rail-brand b em{font-style:normal;color:var(--purple)}
+
+/* ---- the loader: two rings, ink outside, the brand green inside ---- */
+.loader{
+  --color-1:var(--text);--color-2:var(--purple);--size:1px;
+  width:calc(48 * var(--size));height:calc(48 * var(--size));
+  border:calc(3 * var(--size)) dotted var(--color-1);border-style:solid solid dotted dotted;
+  border-radius:50%;display:inline-block;position:relative;box-sizing:border-box;flex:none;
+  animation:rotation 2s linear infinite;background:none;gap:0;
+}
+.loader::after{
+  content:'';box-sizing:border-box;position:absolute;left:0;right:0;top:0;bottom:0;margin:auto;
+  border:calc(3 * var(--size)) dotted var(--color-2);border-style:solid solid dotted;
+  width:calc(24 * var(--size));height:calc(24 * var(--size));border-radius:50%;
+  animation:rotationBack 1s linear infinite;transform-origin:center center;
+}
+.loader i{display:none}
+.loader.sm{--size:.34px;--color-1:currentColor;--color-2:currentColor;margin-right:8px;vertical-align:middle}
+@keyframes rotation{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+@keyframes rotationBack{0%{transform:rotate(0deg)}100%{transform:rotate(-360deg)}}
